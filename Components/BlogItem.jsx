@@ -1,18 +1,20 @@
-import { assets, blog_data } from '@/Assets/assets'
+import { assets } from '@/Assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const BlogItem = () => {
+const BlogItem = ({title,desc,image,category}) => {
   return (
-    <div className='border border-black w-fit '>
-        <Image src={blog_data[0].image} width={400} alt='' className='w-[300px]' />
-        <h1 className='bg-black text-white w-fit p-1 text-sm'>{blog_data[0].category}</h1>
-        <h1 className='mt-6 leading-relaxed text-xl w-[300px]'>{blog_data[0].title}</h1>
-        <p className='text-sm mt-3 text-gray-600 w-[300px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur libero dolor odio expedita sunt.</p>
-        <button className='text-xl flex items-center justify-center gap-2'>
-            <h1>Read More</h1>
-            <Image src={assets.arrow} alt='' className=''/>
-        </button>
+    <div className='max-w-[330px] sm:max-w-[300px] bg-white hover:shadow-[-7px_7px_0px_#000000] duration-100 border border-black '>
+        <Image src={image} width={400} alt='' className='w-[400px] border-b-black' height={400} />
+            <h1 className='ml-5 text-white mt-5 px-1 inline-block text-sm bg-black '>{category}</h1>
+            <div className='p-5'>
+            <h1 className='mb-2 text-lg font-medium tracking-tight text-gray-900'>{title}</h1>
+            <p className='mb-3 text-sm tracking-tight text-gray-700'>{desc}</p>
+            <div className='inline-flex items-center py-2 text-center font-semibold'>
+                Read More
+                <Image src={assets.arrow} alt='' className='ml-2' width={12}/>
+            </div>
+        </div>
     </div>
   )
 }
