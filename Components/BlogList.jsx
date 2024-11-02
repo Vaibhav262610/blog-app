@@ -5,6 +5,7 @@ import BlogItem from './BlogItem'
 const BlogList = () => {
 
     const [menu , setMenu] = useState("All")
+    
 
 
   return (
