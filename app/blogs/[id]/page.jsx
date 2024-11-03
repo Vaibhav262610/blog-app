@@ -34,6 +34,8 @@ const Page = ({ params: asyncParams }) => {
             </div>
             <div className='text-center py-24'>
                 <h1 className='text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto'>{data.title}</h1>
+                <Image className='mx-auto  mt-6 border rounded-full border-white' src={data.author_img} alt='' width={60} height={60}/>
+                <p>{data.author}</p>
             </div>
         </div>
     </> : <></>
