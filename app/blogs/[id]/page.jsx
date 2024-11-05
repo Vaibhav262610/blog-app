@@ -44,7 +44,7 @@ const Page = ({ params: asyncParams }) => {
         </div>
             <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
                 <Image className='border-4 border-white' src={data.image} alt='' width={1280} height={720} />
-                <h1 className='my-8 text-[26px] font-semibold'>Introduction :</h1>
+                <h1 className='my-8 text-[26px] font-semibold'>Introduction : </h1>
                 <p>{data.description}</p>
             </div>
             <Footer />
