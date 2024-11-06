@@ -5,9 +5,9 @@ import React from 'react'
 
 const BlogItem = ({title,desc,image,category,id}) => {
   return (
-    <div className='max-w-[330px] sm:max-w-[300px] bg-white hover:shadow-[-7px_7px_0px_#000000] duration-100 border border-black '>
+    <div className='max-w-[330px]  sm:max-w-[300px] bg-white hover:shadow-[-7px_7px_0px_#000000] duration-100 border border-black '>
         <Link href={`/blogs/${id}`}>
-        <Image src={image} width={400} alt='' className='cursor-pointer w-[400px] border-b-black' height={400} />
+        <Image src={image} width={400} alt='' className=' cursor-pointer w-[400px] border-b-black' height={400} />
         </Link>
             <h1 className='ml-5 text-white mt-5 px-1 inline-block text-sm bg-black '>{category}</h1>
             <div className='p-5'>
