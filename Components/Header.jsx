@@ -8,11 +8,18 @@ const Header = () => {
     <div className='py-5 px-5 md:px-12 lg:px-28'>
         <div className='flex justify-between items-center'>
             <Link href='/'>
+            {/* <div className='text-5xl border border-black p-2 font-semibold shadow-[-7px_7px_0px_#000000] flex'>
+                <h1 className=''>B</h1>
+                <h1 className=''>logger</h1>
+            </div> */}
+            {/* <h1 className='text-5xl p-4 text-white bg-black font-semibold'>B< span className='bg-white text-black'>logger</span></h1> */}
             <Image src={assets.logo} alt='' width={180} className='w-[130px] sm:w-[180px]' />
             </Link>
+            <Link href='/login'>
             <button className='hover:shadow-[0px_0px_0px_#000000] shadow-[-7px_7px_0px_#000000] transition-all duration-175 flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-black'>
                 Get Started <Image src={assets.arrow} alt='' />
             </button>
+            </Link>
         </div>
         <div className='text-center my-8'>
             <h1 className='text-3xl sm:text-5xl font-medium'>Latest Blogs</h1>
